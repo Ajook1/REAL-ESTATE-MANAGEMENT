@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing Form</title>
+    <link rel="stylesheet" href="seller.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body style=" background-color:#001731;">
+    <div class="x">
+        <a href="login.html">
+          <button id="logoutButton">Join/Log In</button></a>
+      </div>
+        <header>
+            <div class="logo">
+                
+                <h1>MT Real-Estate</h1>
+            </div>
+            <nav><b>
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
+                  <li><a href="properties.html">PROPERTIES</a></li>
+                  <li><a href="agents.html">AGENTS</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+                </b>
+              </nav>
+        </header><br>
+    <div class="container">
+        <h1>Property Listing Form</h1>
+        <form id="propertyForm">
+            <div class="form-group">
+                <label for="title">Property Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price (USD):</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Property Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="sqft">Square Footage:</label>
+                <input type="number" id="sqft" name="sqft" required>
+            </div>
+            <div class="form-group">
+                <label for="garage">Garage:</label>
+                <select id="garage" name="garage" required>
+                    <option value="none">None</option>
+                    <option value="attached">Attached</option>
+                    <option value="detached">Detached</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="features">Features:</label>
+                <input type="text" id="features" name="features">
+                <small class="form-text">Separate features with commas (e.g., "Swimming Pool, Garden, Patio")</small>
+            </div>
+            <a href="s21_takbide_shubhangi@mgmcen.ac.in">
+            <button type="submit">Submit Listing</button></a>
+        </form>
+    </div>
+
+    <script src="seller.js"></script>
+</body>
+</html>

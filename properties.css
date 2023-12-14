@@ -1,0 +1,33 @@
+body 
+{
+  font-family:sans-serif; 
+  color:whitesmoke;
+}
+.a{
+    display: flex;
+    padding: 20px;
+    background-color:#001731;
+}
+.a img{
+    border-radius: 20px;
+    height: auto;
+    width: 250px;
+    border:5px solid  #c29b40;
+}
+.b{
+   
+    padding-left: 90px;
+}
+.c{
+    display: flex;
+    padding: 20px;
+    background-color: #002349;
+}
+.c img{
+    border-radius: 20px;
+    height: auto;
+    width: 250px;
+    border:5px solid #c29b40;
+   
+
+}

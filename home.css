@@ -1,0 +1,220 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+.x{
+    background-color: #001731;
+    padding: 15px;
+    height: 10px;
+    border-style: solid;
+    border-bottom-color: #c29b40;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002349;
+    color: white;
+    padding: 10px ;
+    height: 9vh;
+    border-bottom: 1px solid #666;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #666;
+}
+
+.logo img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #002349;
+    color: white;
+    border-bottom: 1px solid #666;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+  }
+  
+  #logoutButton {
+    background-color: #002349;
+    font-size: 18px;
+    color: white;
+    padding: 8px 16px;
+   border-color: #c29b40;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+
+nav a:hover {
+    color: #c29b40; /* Change the color on hover */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ... Rest of the styles ... */
+
+footer {
+    border-style: solid;
+     border-top-color: #c29b40;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}            
+video {
+    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  }
+  .video-wrapper {
+    border: 2px solid #000;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  .main {
+    text-align: center;
+    background-color: #002349;
+    color: white;
+}
+ 
+.marq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    size: 30px;
+
+}  
+.l{
+    display: flex;
+    padding: 20px;
+    background-color: transparent;
+}
+.l img{
+   
+    height:500px;
+    width: 650px;
+    border:4px solid black;
+    margin-left: 90px;
+}
+.m{
+    
+    padding-left: 10px;
+    color: black;
+    line-height: 40px;
+}
+.separator {
+    width: 180px;
+    margin: 13px 0;
+    border-top: 2px solid #c29b40;
+    margin-left: 100px;
+}
+.sepa{
+    width: 80vw;
+    margin-left: 100px;
+    border-top: 2px solid #c29b40;
+    margin-top: 30px;
+}
+.n{
+    display: flex;
+    padding: 20px;
+   border-top-color: #c29b40;
+}
+.n img{
+    height:400px;
+    width: 650px;
+    margin-left: 10px;
+}
+.vid {
+    border:2px solid black;
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    
+  }
+.v{
+    background-color: #002349;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+

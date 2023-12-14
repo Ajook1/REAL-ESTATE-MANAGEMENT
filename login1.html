@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    background: #002349;
+    color: whitesmoke;
+  }
+form{
+    width:35rem;
+    margin: auto;
+    color:whitesmoke;
+    background-color: #001731;
+    border-radius: 12px;
+    border: 2px solid #c29b40;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+input[type=email], input[type=password], input[type=text],input[type=cpassword] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+  }
+
+ #user-type{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+ }
+ .container-3 .btn{
+    background-color: #001731;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid goldenrod;
+  }
+
+
+  .container-3 .btn:hover {
+    background-color: #07a421; /* Change the background color on hover */
+}
+
+.register{
+    color: white;
+    text-align: center;
+  }
+  
+  .register a{
+    color: rgb(74, 146, 235);
+  }
+
+  .register a:link{
+    text-decoration: none;
+  }
+
+
+  .container-1 h3{
+    text-align: center;
+  }
+
+  .container-1 p{
+    text-align: center;
+    color: gray;
+  }
+ 
+
+  @media screen and (max-width: 600px) {
+    form{
+      width: 25rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form{
+      width: 20rem;
+    }
+  }
+    </style>
+</head>
+<body>
+  <br><br>
+  <h1><u>Login From</u></h1> <br><br>
+  <form action="login3.php" method="post">
+    
+    <div class="container-1">
+        <h3>Sign in </h3>
+        <p>Sign with username and password</p>
+    </div>
+    
+    <div class="container-2">
+        <label>Username:</label>
+        <input type="email" placeholder="Enter your username" id="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password"  placeholder ="Enter your password"  id="password" name="password" required> <br> <br>
+
+        <div class="container-3">
+            <input type="submit" name="submit" value="login now" class="btn">
+            <p class="register">don't have an account? <a href="register1.html">register now</a></p>
+
+        </div>
+        
+        
+    </div>
+
+
+  </form>
+</body>
+</html>

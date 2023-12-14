@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Detail Page</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color and text color for the entire page */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #8a2d2dce;
+        }
+
+        /* Style the header with a background color and navigation links */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00a2e2d2;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            /* Adjust as needed */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            /* Adjust as needed */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #logoutButton {
+            background-color: #f44336;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+            /* Change the color on hover */
+        }
+
+        /* Style the container for content sections */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style the property details section */
+        #property-details {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .property-info {
+            text-align: center;
+        }
+
+        .property-info img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .property-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .property-info p {
+            font-size: 18px;
+        }
+
+        /* Style the contact broker section */
+        #contact-broker {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .broker-info {
+            text-align: center;
+        }
+
+        .broker-info img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Style buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1c8699;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <header>
+                <div class="logo">
+                    <img src="logo\MT.png" alt="Website Logo">
+                    <h1>MT Real-Estate</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="login.html">
+                        <button id="logoutButton">Logout</button> </a>
+                </nav>
+            </header>
+            <br><br><br>
+            <hr>
+            <hr>
+
+        </nav>
+
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <!-- <div class="container">
+        <h1>Real Estate Agency</h1>
+        <ul>
+            <li><a href="#property-details">Property Details</a></li>
+            <li><a href="#contact-broker">Contact Broker</a></li>
+        </ul>
+    </div> -->
+
+    <section id="property-details">
+        <div class="container">
+            <h2>Property Details</h2><br><br>
+            <div class="property-info">
+                <img src="images\im1.jpg" alt="Property 1">
+                <h3>Property 1</h3>
+                <p>3 Bedrooms | 2 Bathrooms | 1,500 sqft</p>
+                <p>Price: $300,000</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget tortor et ante
+                    congue mattis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-broker">
+        <div class="container">
+            <h2>Contact the Broker</h2>
+            <div class="broker-info">
+                <img src="images\img yash.jpg" alt="Broker">
+                <p>Name: Yash Mahajan</p>
+                <p>Email: yashmahajan1376@gmail.com</p>
+                <p>Phone: 7385154631</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Real Estate Agency</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
